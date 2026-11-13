@@ -1,0 +1,19 @@
+/* 브랜드 메인컬러 초록 #009223, 서브컬러 #ffce32*/
+/* 제녹크기, 둥글기 40px */
+/*  */
+:root{
+    --브랜드메인:#009223;
+    --브랜드서브:#ffce32;
+    --titleSize:40px;
+}
+
+header{
+    border-top: 5px solid var(--브랜드메인);
+}
+.logo{
+    color: var(--브랜드메인);
+}
+.section-title{
+    font-size: var(--titleSize);
+    background: var(--브랜드서브);
+}

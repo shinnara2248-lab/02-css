@@ -1,0 +1,15 @@
+section{
+    height: 500px;
+    background: #fff;
+}
+
+.section2{
+    background-image: url(../images/main_signature_01.jpg);
+}
+.section4{
+    background-image: url(../images/main_signature_02.jpg);
+}
+.section2, .section4{
+    background-position: center;
+    background-attachment: fixed;
+}

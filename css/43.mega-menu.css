@@ -1,0 +1,36 @@
+/* 공통사항 */
+/* 1. 모든 여백을 제거 */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 2. li 장식 제거 */
+li{
+    list-style: none;
+}
+/* 3. a 밑줄제거, 글자색 */
+a{
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+.main-menu>li{
+    display: inline-block;
+    margin: 10px 30px;
+}
+.main-menu>li>a{
+    font-size: 18px;
+    font-weight: 600;
+    background-color: yellow;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+}
+/* .main-menu>li:hover+.submenu{
+    display: block;
+} */
+ .main-menu>li:hover .submenu{
+    display: block;
+ }

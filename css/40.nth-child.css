@@ -1,0 +1,30 @@
+/* list의 자식인 li 중에 첫번째만 글자크기, 대문자 */
+.list>li:first-child {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+/* 마지막 자식을 선택 글자 굵게, 밑줄 */
+.list>li:last-child {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+/* 세번째 자식만 선택 기울기 */
+.list>li:nth-child(3) {
+    font-style: italic;
+}
+
+/* 짝수=li 배경 핑크
+홀수=li 배경 파랑 */
+.list>li:nth-child(2n) {
+    background: pink;
+}
+
+.list>li:nth-child(2n+1) {
+    background: skyblue;
+}
+
+div>p:first-of-type{
+    background: palegreen;
+}

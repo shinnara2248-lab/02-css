@@ -1,0 +1,35 @@
+/* 모든 자식이 absolute되면 부모는 높이값이 없어진다 */
+/* 부모찾기=height를 준다 */
+
+.wrap{
+    width: 600px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 0 auto;
+    position: relative;
+
+    >div{
+        width: 100px;
+        height: 100px;
+        border: 1px solid lightgray;
+    }
+
+    .box1{
+        background: lightblue;
+        position: absolute;
+        left: 50px;
+        top: 50px;
+    }
+
+    .box2{
+        background: lightpink;
+        position: absolute;
+        left: 70px;
+    }
+
+    .box3{
+        background: lightgoldenrodyellow;
+        position: absolute;
+        left: 90px;
+    }
+}

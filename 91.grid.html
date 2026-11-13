@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .wrap {
+            background-color: rgb(210, 250, 250);
+            margin-bottom: 20px;
+        }
+
+        .wrap>div {
+            background-color: rgb(252, 214, 220);
+            border: 1px solid #6a6a6a;
+        }
+
+        .flexWrap {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .flexWrap>div {
+            flex: 0 0 calc((100% - 40px) / 3);
+        }
+
+        .gridWrap{
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>grid</h1>
+    <p>flex=1차원 레이아웃</p>
+    <p>grid=2차원 레이아웃</p>
+
+    <div class="wrap flexWrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+    <div class="wrap gridWrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+</body>
+
+</html>

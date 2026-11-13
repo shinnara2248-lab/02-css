@@ -1,0 +1,76 @@
+.hero{
+    background-color: beige;
+    height: 100vh;
+    /* viewport height=높이에 맞춰서 현제 보이는 화면을 다 채워라 */
+}
+
+.hero>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mouse-wrap{
+    /* 이 4개가 하나의 set */
+    position: absolute;
+    background-color: aquamarine;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    /* 대표속성 */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: mouseAni 1s infinite alternate linear;
+}
+.mouse{
+    width: 25px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+.mouse>span{
+    display: block;
+    width: 4px;
+    height: 8px;
+    background: #fff;
+    border-radius: 4px;
+    position: absolute;
+    left: 50%;
+    /* top을 주면 부모를 기준으로 위치를 찾음, 이미 mouse-wrap에 position이 있어서 여기가 부모임, 부모요소는 화면에 변화를 주지 않고 저장할때는 relative를 주지만, 이미 다른값으로 저장되어 있어도 부모로 인지함 */
+    top: 10px;
+    transform: translateX(-50%);
+    animation: mouseWheel 3s infinite;
+}
+
+@keyframes mouseAni {
+    from{
+        bottom: 100px;
+    }
+    to{
+        bottom: 50px;
+        opacity: 0.3;
+    }
+}
+@keyframes mouseWheel {
+    0%{
+        top: 10px;
+        opacity: 0.7;
+    }
+    50%{
+        top: 20px;
+        opacity: 1;
+    }
+    100%{
+        top: 50px;
+        opacity: 0;
+    }
+}
+
+h1{
+    font-size: 100px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+}

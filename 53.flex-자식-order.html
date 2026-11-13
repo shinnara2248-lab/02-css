@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            max-width: 660px;
+            background: pink;
+            display: flex;
+            justify-content: space-between;
+        }
+        .wrap>div{
+            height: 100px;
+            border: 2px solid black;
+        }
+        /* 부모가 flex일때만 order 사용 가능 */
+        /* order 기본=0 숫자가 크면 뒤로 */
+        .wrap>.box1{
+            width: 140px;
+            order: 2;
+        }
+        .wrap>.box2{
+            width: 280px;
+            order: 1;
+        }
+        .wrap>.box3{
+            width: 140px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+    </div>
+</body>
+</html>

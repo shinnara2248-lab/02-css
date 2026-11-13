@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.wrap{
+    width: 600px;
+    border: 5px solid;
+}
+
+.wrap>div{
+    width: 5px;
+    height: 50px;
+    background: lightsalmon;
+    margin: 10px;
+    transition-duration: 6s;
+}
+/* .wrap에 마우스를 hover하면 자식인 div의 너비가 */
+.wrap:hover div{
+    width: calc(100% - 20px);
+}
+.wrap>.box2{
+    transition-timing-function: linear;
+}
+.wrap>.box3{
+    transition-timing-function: ease-out;
+}
+.wrap>.box4{
+    transition-timing-function: ease-in-out;
+}
+.wrap>.box5{
+    transition-timing-function: steps(10);
+}
+.wrap>.box6{
+    transition-timing-function: cubic-bezier(.73, 1.43, .85, 1.25);
+}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+    </div>
+</body>
+</html>785

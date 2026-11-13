@@ -1,0 +1,13 @@
+/* ul>li 검정동그라미->사각형,빈동그라미 */
+.list>li{
+    list-style: circle;
+}
+
+ol>li{
+    list-style: lower-roman;
+}
+
+/* 제거 */
+.gnb>li{
+    list-style: none;
+}

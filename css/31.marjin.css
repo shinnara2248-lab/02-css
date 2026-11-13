@@ -1,0 +1,55 @@
+/* 모든 요소의 바깥여백을 0으로 전부 변경 */
+* {
+    margin: 0;
+}
+h1{
+    background-color: skyblue;
+    margin-bottom: 25px;
+}
+p{
+    background-color: pink;
+    /* margin-left: 100px; */
+    margin-inline-start: 20px;
+    /* left, right inline
+    top, bottom block
+    left, top=start
+    right, bottom=end */
+}
+div{
+    background-color: antiquewhite;
+    border: 1px solid;
+}
+/* .box1 사방으로 바깥여백 50 */
+.box1{
+    margin:50px;
+}
+/* .box2 위아래100, 좌우50 */
+/* 위요소의 아래 여백과 아래요소의 위 여백이 있는 경우 큰 값 한개만 적용된다=마진 겹침 현상이라 한다 */
+.box2{
+    margin: 100px 50px;
+}
+/* .box3 위 50, 좌우 10, 아래 70 */
+.box3{
+    margin: 50px 10px 70px;
+}
+/* .box4 위 10, 오른쪽 100, 아래 20, 왼쪽 0 */
+.box4{
+margin: 10px 100px 20px 5px;
+}
+/* .box5 */
+.box5{
+    /* margin-left: 5px; */
+    margin-inline-start: 5px;
+    /* margin-right: 100px; */
+    margin-inline-end: 100px;
+    /* margin-top: 100px; */
+    margin-block-start: 100px;
+    /* margin-bottom: 20px; */
+    margin-block-end: 20px;
+}
+strong{
+    background: green;
+    /* 위 아래 50, 좌우 100 */
+    /* 인라인은 위아래 마진이 적용 안 됨, 주고싶으면 block으로 변경해야함 */
+    margin: 50px 100px;
+}

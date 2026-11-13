@@ -1,0 +1,37 @@
+/* pc */
+body{
+    background: pink;
+    font-size: 16px;
+}
+.ipad, .mobile{
+    display: none;
+}
+.title{
+    font-size: 3em;
+}
+/* ipad=해상도 768~1279 */
+@media screen and (max-width:1279px){
+    body{
+        background: lightskyblue;
+        font-size: 14px;
+    }
+    .pc{
+        display: none;
+    }
+    ipad{
+        display: block;
+    }
+}
+/* mobile */
+@media screen and (max-width:767px){
+    body{
+        font-size: 12px;
+        background: lightgreen;
+    }
+    ipad{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+}

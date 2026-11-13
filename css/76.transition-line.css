@@ -1,0 +1,51 @@
+.img-box {
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    position: relative;
+}
+
+.img-box::before,
+.img-box::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 1px;
+    background: hotpink;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.img-box>a::before,
+.img-box>a::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 0%;
+    background: navy;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.img-box>a::after{
+    right: 0;
+    top: 0;
+}
+
+.img-box::after{
+    right: 0;
+}
+
+.img-box>a::before{
+    bottom: 0;
+}
+
+.img-box:hover::before,
+.img-box:hover::after{
+    width: 100%;
+}
+
+.img-box:hover>a::before,
+.img-box:hover>a::after{
+    height: 100%;
+}

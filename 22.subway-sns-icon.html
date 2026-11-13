@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            list-style:none;
+        }
+        .sns-list>li>a {
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: skyblue;
+            text-indent: -9999px;
+        }
+
+        .sns-list>li>a:hover{
+            background-position-x: -50px;
+        }
+        .sns-list>.sns-insta>a {
+            background-image: url(./images/insta-icon.png);
+        }
+
+        .sns-list>.sns-facebook>a {
+            background-image: url(./images/facebook-icon.png);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ul.sns-list>li*2>a[href="#"] -->
+    <ul class="sns-list">
+        <li class="sns-insta"><a href="#">insta</a></li>
+        <li class="sns-facebook"><a href="#">facebook</a></li>
+    </ul>
+</body>
+
+</html>

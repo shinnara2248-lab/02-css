@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            background: rgb(255, 220, 232);
+        }
+        p::before{
+            content: "start";
+            font-size: 50px;
+            color: rgb(117, 137, 252);
+        }
+        p::after{
+            content: "end";
+            font-size: 30px;
+        }
+        div{
+            border: 1px solid;
+        }
+        div::first-letter{
+            font-size: 50px;
+        }
+        div::first-line{
+            background: palegreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>가상요소 선택자</h1>
+    <p>이곳이 기준!!!</p>
+    <div>이제 장마 끝인가요?? 이번주 다음주 죽음 34도밖에 안 됨...이제 장마 끝인가요?? 이번주 다음주 죽음 34도밖에 안 됨...이제 장마 끝인가요?? 이번주 다음주 죽음 34도밖에 안 됨...이제
+        장마 끝인가요?? 이번주 다음주 죽음 34도밖에 안 됨...이제 장마 끝인가요?? 이번주 다음주 죽음 34도밖에 안 됨...이제 장마 끝인가요?? 이번주 다음주 죽음 34도밖에 안 됨...이제 장마
+        끝인가요?? 이번주 다음주 죽음 34도밖에 안 됨...이제 장마 끝인가요?? 이번주 다음주 죽음 34도밖에 안 됨...</div>
+</body>
+
+</html>

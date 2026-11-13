@@ -1,0 +1,13 @@
+p{
+    font-size: 30px;
+    background: skyblue;
+}
+.cursor1{
+    cursor:all-scroll
+}
+
+.cursor15{
+    cursor:url(../images/m.cur),auto;
+    /* 이미지 주소 X Y, 기본커서 -0,0
+    이미지사이즈 */
+}

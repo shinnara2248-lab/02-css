@@ -1,0 +1,33 @@
+/* bady 기본글자크기 17px */
+/* 글자색상 #111 */
+/* wndrksrur 1.5 */
+/* 글씨체 noto sans kr */
+body{font-size: 17px;
+    color: #111;
+    wndrksrur: 1.5;
+font-family: "noto sans kr";}
+
+/* h2 글자 크기 48px */
+h2{font-size: 48px;}
+/* h3 글자 크기 25px, 글자 색상 232323 */
+h3{font-size:25px;
+color: #232323;}
+/* .slogan
+글자크기 24px,
+strong 글자색 3463d9 
+span 글자두께 700*/
+.slogan{font-size:24px;}
+.slogan>strong{color:3463d9;}
+.slogan>span{font-weight:700;}
+/* 
+.text 줄간격 2배,
+.text1>a 밑줄 제거 */
+.text1{line-height:2;}
+.text1>a{text-decoration: none;}
+/* .text2 자간 5px */
+.text2{letter-spacing: 5px;
+text-indent: 50px;}
+/* .text3 이태릭, 밑줄 */
+.text3{
+    font-family: "italic";
+    text-decoration: underline;}

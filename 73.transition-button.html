@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .more-btn>a{
+            display: flex;
+            background: rgb(255, 128, 147);
+            width: 165px;
+            height: 64px;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            border-radius: 64px;
+            text-decoration: none;
+            color: #fff;
+        }
+        /* filter=보이는 효과를 변경할 때 */
+        .more-btn>a img{
+            width: 16px;
+            filter: invert(1);
+            transition: 0.5s;
+        }
+        .more-btn>a .over{
+            /* border: 1px solid; */
+            overflow: hidden;
+        }
+        .more-btn>a .over>.text{
+            /* background: rgb(110, 236, 236); */
+            position: relative;
+            transition: 0.5s;
+        }
+        .more-btn>a .over>.text::after{
+            content: "More";
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+        .more-btn>a:hover .over>.text{
+            transform: translateY(-100%);
+        }
+        .more-btn>a:hover img{
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="more-btn">
+        <a href="#">
+            <div class="over">
+                <div class="text">More</div>
+            </div>
+            <img src="./images/abib/close.png" alt="+버튼">
+        </a>
+    </div>
+</body>
+</html>

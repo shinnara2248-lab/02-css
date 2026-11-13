@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    background: rgba(255, 0, 0, 0.1);
+}
+
+.inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: rgba(0, 0, 255, 0.1);
+}
+
+.section-title {
+    margin: 0 0 50px 0;
+    padding-top: 50px;
+}
+
+.new-menu-list {}
+
+.new-menu-list>div {
+    width: 420px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.new-menu-list .img-box {
+    width: 420px;
+    background: #fff;
+}
+
+.new-menu-list .img-box img {
+    width: 100%;
+}
+
+.new-menu-list .text-box {
+    background: #f4f4f4;
+    padding: 30px;
+}
+
+/* goods-title=글자크기 18, 색상=1c1c1c, 두께=400
+en-title=글자크기 12, 색상=1c1c1c, 두께=300 ,간격=위 5, 아래 20
+goods-desc */
+
+.new-menu-list .goods-title {
+    font-size: 18px;
+    color: #1c1c1c;
+    font-weight: 400;
+}
+
+.new-menu-list .en-title {
+    font-size: 12px;
+    font-weight: 300;
+    margin: 5px 0 20px;
+}
+
+.new-menu-list .goods-desc {
+    font-size: 12px;
+    font-weight: 300;
+}

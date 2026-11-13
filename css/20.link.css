@@ -1,0 +1,18 @@
+/* .list>li>a:link{
+    text-decoration:none;
+}
+.list>li>a:hover{
+    color:green;
+}
+.list>li>a:active{
+    color:hotpink;
+}
+.list>li>a:visited{
+    color:yellow;
+} */
+ .list>li>a{
+    color:#292929;
+ }
+ .list>li>a:hover{
+    color:#009223;
+ }

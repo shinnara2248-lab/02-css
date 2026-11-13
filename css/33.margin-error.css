@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+}
+
+header {
+    background: skyblue;
+}
+
+.inner {
+    background: pink;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    background-color: #333; 
+    margin-top:30px;
+    /* 첫번째 요소에 margin-top을 주면 부모에 적용된다 이를 마진오류현상이라 한다 */
+    /* 해경방법 2가지 padding주거나, float을 주면 된다 */
+}

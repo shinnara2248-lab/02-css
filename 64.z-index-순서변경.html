@@ -1,0 +1,55 @@
+  /* z-index는 1,10,100,1000,10000 단위로 줌 */
+  <!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            border: 1px solid;
+            position: relative;
+        }
+
+        .wrap>div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid rgb(51, 146, 210);
+        }
+
+        .wrap>.box1 {
+            background-color: rgb(221, 255, 170);
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            z-index: 100;
+        }
+
+        .wrap>.box2 {
+            background-color: rgb(190, 190, 255);
+            position: relative;
+        }
+
+        .wrap>.box3 {
+            background-color: rgb(255, 222, 228);
+            position: relative;
+            top: -30px;
+            left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>z-index</h1>
+    <p>position준 요소의 위아래 겹침 순서 변경하기</p>
+    <p>숫자가 클수록 위, -를 주면 body 밑으로 들어가서 선택 안 됨</p>
+
+    <div class="wrap">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+    </div>
+</body>
+
+</html>

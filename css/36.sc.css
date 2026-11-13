@@ -1,0 +1,44 @@
+/* 모든 여백 다 제거 */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* a의 밑줄 제거, 글지색 */
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+/* .inner */
+.inner{
+    max-width: 1320px;
+    /* background-color: rgba(0, 0, 255, 0.2); */
+    margin: 0 auto;
+}
+.section-title{
+    font-size: 58px;
+    text-align: center;
+    margin-bottom: 64px;
+}
+.spon-list{}
+.spon-list>div{
+    border: 1px solid #cbcccc;
+    border-radius: 12px;
+    width: 420px;
+    padding: 60px 40px;
+}
+
+.spon-list>div .spon-title{
+    font-size: 32px;
+    margin: 40px 0 20px;
+}
+.spon-lisi>div .spon-detail{
+    color: #555;
+    font-size: 20px;
+}
+.spon-list>div .spon-more{
+    margin-top: 15px;
+    /* background-color: pink; */
+    text-align: right;
+}
+

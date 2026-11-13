@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 400px;
+            border: 2px solid;
+            display: flex;
+        }
+
+        .wrap>div{
+            width: 200px;
+            height: 200px;
+        }
+
+        .box1{
+            background: lightpink;
+            flex-shrink: 1;
+        }
+
+        .box2{
+            background: lightcyan;
+            flex-shrink: 2;
+        }
+
+        .box3{
+            background: lightyellow;
+            flex-shrink: 0;
+        }
+
+        .box4{
+            background: plum;
+        }
+    </style>
+</head>
+<body>
+    <h1>flex-shlink</h1>
+    <p>부모가 display:flex이고</p>
+    <p>부모의 모자라는 공간을 자식에게 어떻게 배분해서 빼줄거냐</p>
+    <p>기본값은 1</p>
+
+    <div class="wrap">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+    </div>
+</body>
+</html>

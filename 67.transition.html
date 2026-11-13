@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: rgb(210, 255, 255);
+            transition-duration: 1s;
+            /* transition-property: width; */
+            transition-delay: 0.2s;
+        }
+        .box:hover{
+            width: 200px;
+            height: 200px;
+            background: rgb(255, 197, 197);
+        }
+    </style>
+</head>
+<body>
+    <h1>transition</h1>
+    <p>중간과정을 만들어서 애니메이션 효과를 줄 때 사용한다</p>
+
+    <div class="box">box</div>
+</body>
+</html>

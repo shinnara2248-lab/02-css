@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            border: 1px solid red;
+            width: 300px;
+            /* 밴드프리픽스 공통적으로 제공되는 기본 기능이 아닌경우 */
+            /* webkit=크롬 계열, 사파리, edge */
+            /* moz=파이어폭스 */
+            /* ms=옛날 익스플로러 */
+            /* o=오페라 */
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp:3;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>말줄임</h1>
+    <p>
+        밤바라 밤바라 밤바라 밤
+        밤바라 밤바라 밤바라 밤
+        바라바라 밤 바라바라 밤
+        바라바라 바라바라 밤
+        뽀뽀뽀 뽀로로가 나나나 나타났다
+        바바바 반갑게 라라라 인사해요
+        모두모두 모두가 기기기
+        기분좋게인사해요 Say Hello
+        바라밤 바라밤바라 밤바라밤
+        바라바라 바라바라 밤
+    </p>
+</body>
+</html>

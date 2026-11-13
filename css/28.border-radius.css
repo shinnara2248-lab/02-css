@@ -1,0 +1,49 @@
+div {
+    background: skyblue;
+    margin: 10px;
+    width: 300px;
+    height: 150px;
+}
+
+/* .box1 모서리 둥글기 사방으로 30px */
+.box1 {
+    border-radius: 30px;
+}
+
+/* .box2 위왼쪽, 아래 오른쪽 10px 위오른쪽 아래왼쪽 50px */
+.box2 {
+    border-radius: 10px 50px;
+}
+
+/* .box3 위왼쪽 0, 위오른쪽 아래왼쪽 20px
+아래오른쪽 50px */
+.box3 {
+    border-radius: 0 20px 50px;
+}
+
+/* .box4 위왼쪽 10, 위오른쪽 20. 아래오른쪽 30, 아래왼쪽은 40 */
+.box4 {
+    border-radius: 10px 30px 50px 70px;
+}
+
+/* .box5 아래오른쪽 30*/
+.box5 {
+    border-bottom-right-radius: 30px;
+}
+
+/* .box6 30*/
+.box6 {
+    /* border-radius: 0 0 30px 0; */
+    /* border-end-end-radius: 30px; */
+    /* top,left- start
+    bottom, right-end */
+    /* 위오른쪽 50 */
+    /* border-위아래-좌우-radius */
+    border-start-end-radius: 50px;
+}
+
+/* .box7 모서리 둥글기의 가로 세로를 다르게 주고싶을때
+가로/세로 */
+.box7 {
+    border-radius: 20px/70px;
+}

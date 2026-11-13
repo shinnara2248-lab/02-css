@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    border: 1px solid black;
+    background: skyblue;
+}
+
+/* 안쪽여백 주기 */
+.box1 {
+    padding: 50px;
+}
+
+/* 위아래 50, 좌우 100 */
+.box2 {
+    padding: 50px 100px;
+}
+
+/* 위10 좌우100 아래30 */
+.box3 {
+    padding: 10px 100px 30px;
+}
+
+/* 위30 오른쪽200 아래100 왼50 */
+.box4 {
+    padding: 30px 200px 100px 50px;
+}
+
+/*  */
+.box5 {
+    /* padding-top: 50px; */
+    padding-block-start: 50px;
+    /* padding-right: 100px; */
+    padding-inline-end: 100px;
+}
+/* 인라인 요소의 padding을 주면 위아래 여백 다른 요소와 겹친다 */
+span {
+    background: pink;
+    padding: 50px;
+}

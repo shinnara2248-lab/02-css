@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 150px;
+        }
+        .filter2{
+            /* 숫자가 클수록 더 흐림, px */
+            filter: blur(10px);
+        }
+        .filter3{
+            /* 숫자=100% 기본, 숫자가 낮을 수록 어둡게 숫자가 클수록 밝게 */
+            filter: brightness(50%);
+        }
+        .filter4{
+            /* 숫자=100%or1 기본, 낮을수록 회색 탁하게, 200%or2 클수록 선명하게 */
+            filter: contrast(200%);
+        }
+        .filter5{
+            /* 숫자=100%or1 기본, 1=완전 회색, 0.5=반만 회색 */
+            filter: grayscale(0.7);
+        }
+        .filter6{
+            filter: invert(1);
+        }
+        .filter7{
+            filter: opacity(0.5);
+        }
+        .filter8{
+            /* 숫자=1 기본, 숫자가 커질수록 채도가 높아짐 */
+            filter: saturate(3);
+        }
+        .filter9{
+            /* 숫자=100%or1 기본 */
+            filter: sepia(1);
+        }
+        .filter10{
+            filter: blur(3px) sepia(1);
+        }
+        .png{
+            /* box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); */
+            filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
+        }
+    </style>
+</head>
+<body>
+    <h1>filter</h1>
+    <p class="filter1"><img src="./images/card-slider4.jpg" alt=""></p>
+    <p class="filter2"><img src="./images/card-slider4.jpg" alt=""></p>
+    <p class="filter3"><img src="./images/card-slider4.jpg" alt=""></p>
+    <p class="filter4"><img src="./images/card-slider4.jpg" alt=""></p>
+    <p class="filter5"><img src="./images/card-slider4.jpg" alt=""></p>
+    <p class="filter6"><img src="./images/card-slider4.jpg" alt=""></p>
+    <p class="filter7"><img src="./images/card-slider4.jpg" alt=""></p>
+    <p class="filter8"><img src="./images/card-slider4.jpg" alt=""></p>
+    <p class="filter9"><img src="./images/card-slider4.jpg" alt=""></p>
+    <p class="filter10"><img src="./images/card-slider4.jpg" alt=""></p>
+    <p class="png"><img src="./images/logo_w.png" alt=""></p>
+</body>
+</html>

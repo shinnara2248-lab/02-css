@@ -1,0 +1,189 @@
+/* 공통사항 */
+/* 모든 여백을 제거 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* li 앞에 장식 제거 */
+li {
+    list-style: none;
+}
+
+/* a 글자색 밑줄 제거 */
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* .blind 처리하기 */
+.blind {
+    position: absolute;
+    top: -99999px;
+}
+
+/* img사이즈, 위아래 정렬 */
+img{
+    max-width: 100%;
+}
+
+/* body 글씨체, 글씨크기, 글자색, 줄간격, 자간 */
+/* pretendard=줄간격, 자간이 잘 줄여져있음 */
+body {
+    font-family: "pretendard", sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
+/* 사이트 */
+/* body */
+/* .inner */
+.inner {
+    background-color: rgba(255, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1780px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+section {
+    padding-top: 100px;
+}
+
+/* category-list-wrap */
+.category-list {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+}
+
+.category-list>li {
+    width: 95px;
+    text-align: center;
+}
+
+.category-list>li>a {}
+
+.category-list>li>a img {
+    width: 100%;
+}
+
+.category-list>li:first-child>a img{
+    /* 이미지 색상반전 */
+    filter: invert(1);
+}
+
+.category-list>li>a span {
+    display: block;
+    background-color: #ccc;
+    font-size: 14px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.promotion-wrap{}
+
+.section-title{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title span{
+    display: block;
+}
+
+.promotion-wrap .tab-menu-list{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.promotion-wrap .tab-menu-list>li>a{
+    display: block;
+    font-size: 18px;
+    color: #969696;
+}
+
+.promotion-wrap .tab-menu-list>.active>a{
+    border-bottom: 1px solid #000;
+    color: #000;
+}
+
+.tab-list-wrap{
+    margin-top: 60px;
+}
+
+.tab-list{}
+
+.tab-list>ul{
+    display: flex;
+    /* 너비 */
+    /* 배너 10개 중 5개만 보고싶음 */
+    /* 100%×배너개수÷보고싶은개수 */
+    width: calc(100% * 5 / 4);
+    gap: 20px;
+}
+
+.tab-list>ul>li{}
+
+.tab-list>ul>li .text-box{
+    padding-top: 16px;
+    font-size: 17px;
+}
+
+.tab-list>ul>li .text-box>span{
+    font-weight: 500;
+}
+
+.tab-list>ul>li .text-box>h3{}
+
+.tab-list>ul>li .text-box>h3+p{
+    color: #888;
+    margin: 10px 0 16px;
+}
+
+.tab-list>ul>li .text-box>p .sale{
+    font-weight: 700;
+    color: #0073ff;
+}
+
+.tab-list>ul>li .text-box>p .sale-price{}
+
+.tab-list>ul>li .text-box>p .price{
+    text-decoration: line-through;
+    color: #888;
+}
+
+.tab-list>ul>li a:last-child{
+    display: block;
+    border: 1px solid #888;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 50px;
+    opacity: 0;
+}
+
+.tab-list>ul>li a:last-child:hover{
+    background: #000;
+    color: #fff;
+}
+
+.tab-list>ul>li:hover a:last-child{
+    opacity: 1;
+}
+
+.more-btn{
+    display: flex;
+    justify-content: center;
+    /* text-align:center */
+}
+
+.more-btn>a{
+    display: block;
+    border: 1px solid #000;
+    padding: 12px 50px;
+     /* diplay: inline-block*/
+}

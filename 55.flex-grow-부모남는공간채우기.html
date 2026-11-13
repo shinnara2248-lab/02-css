@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            max-width: 600px;
+            border: 2px solid black;
+            display: flex;
+        }
+
+        .wrap>div{
+            width: 100px;
+            height: 100px;
+        }
+
+        .box1{
+            background: pink;
+            flex-grow: 1;
+        }
+
+        .box2{
+            background: lightblue;
+            flex-grow: 1;
+        }
+
+        .box3{
+            background: lightgoldenrodyellow;
+        }
+
+        .box4{
+            background: lightsalmon;
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>flex-grow</h1>
+    <p>부모가 display:flex이고</p>
+    <p>남는 부모의 공간을 자식 요소에 어떻게 배분해서 채워줄거냐</p>
+    <p>기본값 0</p>
+
+    <div class="wrap">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+    </div>
+</body>
+</html>

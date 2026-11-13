@@ -1,0 +1,28 @@
+/* 공통사항 */
+/* 모든 여백 제거 */
+/* li 장식 제거 */
+/* a 밑줄 제거, 글자색 상속 */
+/* img 위아래 정렬, 최대너비 */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+   list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img,video{
+    max-width: 100%;
+    vertical-align: middle;
+}
+address,i,em{
+    font-style: normal;
+}

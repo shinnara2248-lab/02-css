@@ -1,0 +1,194 @@
+/* pc */
+/* 1. 제거하기 */
+.close-btn,
+.ham-btn {
+    display: none;
+}
+
+body {
+    font-size: 16px;
+}
+
+.inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 16px;
+    background-color: rgba(163, 250, 253, 0.2);
+    position: relative;
+}
+
+header {
+    border-top: 2px solid green;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.gnb-list {
+    position: absolute;
+    display: flex;
+    gap: 1em;
+    right: 16px;
+    top: 20px;
+}
+
+nav {
+    background-color: lightskyblue;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 30px;
+    font-size: 1.13em;
+    font-weight: 700;
+}
+
+.hero-slider-wrap {
+    background: rgb(255, 216, 222);
+    height: 500px;
+}
+
+.section-title {
+    font-size: 2.5em;
+}
+
+.info-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-list>div {
+    height: 200px;
+}
+
+.info-list>.box1 {
+    width: 24%;
+    background: rgb(218, 194, 253);
+}
+
+.info-list>.box2 {
+    width: 48%;
+    background: lightgoldenrodyellow;
+}
+
+.info-list>.box3 {
+    width: 24%;
+    background: rgb(219, 255, 165);
+}
+
+.event-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.event-list>li {
+    border: 1px solid black;
+    /* height: 100px; */
+    width: 49%;
+    /* 670:100px=50%: */
+    aspect-ratio: 67/20;
+}
+
+footer {
+    background: #111;
+    padding: 30px;
+    color: #fff;
+}
+
+/* ipad=768~1279px */
+@media screen and (max-width:1279px) {
+    body {
+        font-size: 14px;
+    }
+
+    /* 1.제거하기 */
+    /* gnb, main-menu */
+    .gnb-list {
+        display: none;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background: rgba(0, 0, 0, 0.8);
+        height: 100vh;
+        z-index: 1000;
+        width: 70%;
+    }
+
+    .main-menu {
+        color: #fff;
+        display: block;
+        background: #bdedff;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        min-width: 300px;
+        line-height: 2;
+        text-indent: 20px;
+    }
+
+    /* 2.보여주기 */
+    /* ham-btn, close-btn */
+    .close-btn {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 10000;
+        width: 32px;
+    }
+
+    .ham-btn {
+        display: block;
+        width: 32PX;
+        position: absolute;
+        right: 16PX;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /* 3.100% */
+    /* 회사정보 순서변경하고 레이아웃변경 */
+    .info-list {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    /* flex준 자식의 순서를 변경할때 order:0 기본, 숫자 큰게 뒤로감 */
+    .info-list>.box2 {
+        width: 100%;
+        order: 1;
+    }
+
+    .info-list>.box1,
+    .info-list>.box3 {
+        width: calc(100% / 2 - 10px);
+        order: 2
+    }
+
+    /* 이벤트를 크기만 조절 */
+
+}
+
+/* mpbile */
+@media screen and (max-width:767px) {
+    body {
+        font-size: 12px;
+    }
+    .info-list{}
+    .info-list>.box1,.info-list>.box3{
+        width: 100%;
+    }
+    .info-list>.box1{
+        order: 0;
+    }
+}

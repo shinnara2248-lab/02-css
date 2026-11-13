@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            background: #ddd;
+            width: 100px;
+            height: 40px;
+            border-radius: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .btn img{
+            width: 16px;
+            transform: rotate(90deg);
+            vertical-align: middle;
+            transition: 0.3s;
+        }
+        .btn:hover img{
+            transform: translateX(10px) rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>transition button</h1>
+    <div class="btn">
+        <span>more</span>
+        <img src="./images/abib/imageye___-_imgi_83_backtotop.png" alt="">
+    </div>
+</body>
+</html>

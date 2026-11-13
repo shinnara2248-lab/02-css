@@ -1,0 +1,12 @@
+h1{
+    font-style: italic;
+}
+
+address{
+    font-style: normal;
+}
+
+p>em{
+    font-style: normal;
+}
+

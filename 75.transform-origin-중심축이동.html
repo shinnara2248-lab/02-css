@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap>div{
+            width: 100px;
+            height: 100px;
+            background: lightblue;
+            margin: 10px;
+            transition: 1s;
+        }
+        .wrap>div:hover{
+            transform: rotate(360deg);
+        }
+        .wrap>.box2{
+            transform-origin: right center;
+        }
+        .wrap>.box3{
+            transform-origin: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>transform-origin</h1>
+    <p>transform 속성의 중심점의 위치를 이동할 때 사용, 기본은 가운데</p>
+    <p>left, center, right</p>
+    <p>top, center, bottom</p>
+    <div class="wrap">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+    </div>
+</body>
+</html>

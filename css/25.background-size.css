@@ -1,0 +1,32 @@
+div{
+    width: 500px;
+height: 350px;
+background: pink url(../images/main_brand4.jpg);
+margin: 10px;
+}
+
+/* 값 1개만 입력하면 너비를 기준으로 조절되고, 높이는 비율에 맞게 조절된다 */
+.box2{
+    background-size: 100%;
+}
+/* 값 2개 첫번째 너비, 두번째 높이를 조절 */
+.box3{
+background-size: 100% 100%;
+}
+
+/* cover 가장 많이 사용함 
+이미지 비율은 유지하고, 빈 공간없이 화면을 꽉 채우도록
+그러다보니 이미지의 일부가 잘릴 수 있음*/
+.box4{
+background-size:cover
+}
+/* contain 
+전체 이미지가 다 보이도록 축소 또는 확대한다
+이미지 비율을 유지해서 빈공간 생길 수 있다*/
+.box5{
+background-size:contain;
+}
+.box6{
+    width: 100%;
+    background-size:contain
+}

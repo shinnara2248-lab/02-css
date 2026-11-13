@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{font-size: 130px; font-weight: 900;}
+        /* 왼쪽 X축, 오른쪽=Y축, 마지막=블러 */
+        .text1{
+            text-shadow: 5px 10px 10px pink;
+        }
+        .text2{
+            text-shadow: -1px -1px lightblue, 1px 1px coral;
+            color: #fff;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background: #ccc;
+            box-shadow: 3px 5px 5px 10px mediumaquamarine inset;
+        }
+        .box2{
+            width: 300px;
+            margin: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .box2 img{
+            width: 100%;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>그림자</h1>
+    <p class="text1">text-shadow</p>
+    <p class="text2">box-shadow</p>
+    <div class="box"></div>
+    <div class="box2"><img src="./images/20260610231554_1798911963619_ylu_xBcld1.jpg" alt=""></div>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+/* 내가 가지고있는 폰트를 등록해서 사용하는 방법 */
+@font-face {
+    /* 등록할 폰트 이름 */
+    /* 등록할 폰트의 위치 지정 */
+    /* 등록할 폰트의 두께 */
+    font-family: "subway font";
+    src: url(../font/Subway-SixInch.woff);
+    font-weight: 400;
+}
+@font-face{
+    font-family: "subway Font";
+    src:url(../font/Subway-Footlong.woff);
+    font-weight: 800;
+}
+body {
+    font-size: 30px;
+}
+
+.gFont {
+    font-family: "Outfit", sans-serif;
+}
+.mFont{
+    font-family: "subway Font";
+    font-weight: 800;
+}

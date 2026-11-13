@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 400px;
+            border: 2px solid;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .wrap>div {
+            height: 100px;
+            width: 200px;
+        }
+
+        .box1 {
+            background: lightpink;
+        }
+
+        .box2 {
+            background: lightcyan;
+        }
+
+        .box3 {
+            background: lightyellow;
+        }
+
+        .box4 {
+            background: plum;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>flex-wrap</h1>
+    <p>부모의 공간이 모자랄 경우 자식요소 줄변경하기</p>
+    <div class="wrap">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+    </div>
+</body>
+
+</html>

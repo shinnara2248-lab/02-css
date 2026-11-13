@@ -1,0 +1,24 @@
+.quick-list>div>a {
+    display: block;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 700;
+    width: 300px;
+    height: 80px;
+    line-height: 80px;
+}
+
+.quick-list>.store>a {
+    background: #ffce32 url(../images/icon_map.png) no-repeat 80px center;
+    color: #1a1a1a;
+    text-indent: 120px;
+    border-radius: 30px 0 0 0;
+}
+
+.quick-list>.franchise>a {
+    background: #009223 url(../images/icon_franchise.png) no-repeat 60px center;
+    color: #fff;
+    text-indent: 110px;
+    /* border-bottom-right-radius: 30px; */
+    border-end-end-radius: 30px;
+}
